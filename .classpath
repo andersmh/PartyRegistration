@@ -14,5 +14,8 @@
 			<attribute name="javadoc_location" value="https://tomcat.apache.org/tomcat-9.0-doc/api/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.ejb.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.servlet.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
