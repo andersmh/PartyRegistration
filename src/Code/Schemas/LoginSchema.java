@@ -1,7 +1,5 @@
 package Code.Schemas;
 
-import javax.servlet.http.HttpServletRequest;
-
 public class LoginSchema {
 
     private String errortext = "";
