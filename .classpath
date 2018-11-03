@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/eclipselink-2.7.1.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.annotation.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.ejb.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.jms.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.resource.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.servlet.jsp.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.servlet.jsp.jstl.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/javax.transaction.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/lib/postgresql-42.1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 8 [1.8.0_181]">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/apache-tomcat-9.0.12/lib/eclipselink-2.7.1.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="https://tomcat.apache.org/tomcat-9.0-doc/api/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.ejb.jar"/>
-	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.persistence.jar"/>
-	<classpathentry kind="lib" path="/Users/andersmaehlumhalvorsen/Documents/jar-files/javax.servlet.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
