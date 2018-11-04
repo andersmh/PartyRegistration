@@ -110,7 +110,7 @@ public class RegistrerSchema {
 
 	private boolean iskjonnValid() {
 		if (kjonn == null) {
-			errorKjonn = "Du m� oppgi kjonn";
+			errorKjonn = "Du må oppgi kjonn";
 			return false;
 		}
 
@@ -122,7 +122,7 @@ public class RegistrerSchema {
 	}
 
 	private boolean isfirstNameValid() {
-		if (firstName.matches("^[A-Z���][a-z���\\-\\sA-Z���]{2,20}$")) {
+		if (firstName.matches("^[A-ZÆØÅ][a-zæøå\\-\\sA-ZÆØÅ]{2,20}$")) {
 			errorFirstName = "";
 			return true;
 		}
@@ -131,7 +131,7 @@ public class RegistrerSchema {
 	}
 
 	private boolean islastNameValid() {
-		if (lastName.matches("^[A-Z���][a-zA-Z\\-������]{2,20}$")) {
+		if (lastName.matches("^[A-ZÆØÅ][a-zA-Z\\-ÆØÅæøå]{2,20}$")) {
 			errorLastName = "";
 			return true;
 		}

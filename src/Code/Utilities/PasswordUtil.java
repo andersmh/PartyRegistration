@@ -12,8 +12,8 @@ import javax.xml.bind.DatatypeConverter;
 public class PasswordUtil {
 
     /*
-     * Man kunne godt gjort denne klassen mer fleksibel ved � bytte ut
-     * konstanter med konstrukt�rparametre. P� den annen side: MAN M� BRUKE
+     * Man kunne godt gjort denne klassen mer fleksibel ved å bytte ut
+     * konstanter med konstruktørparametre. P� den annen side: MAN MÅ BRUKE
      * SAMME OPPSETT OVERALT I EN APPLIKASJON.
      */
 
@@ -33,12 +33,12 @@ public class PasswordUtil {
 
     /**
      * Denne metoden genererer en passordstreng for sikker lagring av passord.
-     * Passordstrengen inneholder b�de saltet som ble brukt i hashingen og
+     * Passordstrengen inneholder både saltet som ble brukt i hashingen og
      * resultatet (digest-et) av hashingen.
      * <p>
-     * Det er ikke noen spesiell grunn til at salt og digest b�r sl�s sammen
-     * til �n streng. De kunne godt v�rt returnert som to verdier (som et par).
-     * Det er gjort slik fordi det gjorde API-et enkelt � bruke, en verdi inn,
+     * Det er ikke noen spesiell grunn til at salt og digest bør slås sammen
+     * til en streng. De kunne godt vært returnert som to verdier (som et par).
+     * Det er gjort slik fordi det gjorde API-et enkelt å bruke, en verdi inn,
      * en verdi ut.
      *
      * @param passord Passord som skal krypteres
@@ -110,17 +110,17 @@ public class PasswordUtil {
             /* Eventuelle unntak her skyldes ugyldig angivelse av tegnsett i
              * passord.getBytes(PASSORD_TEGNSETT) eller ugyldig angivelse av
              * hash-algoritme i MessageDigest.getInstance(HASH_ALGORITME).
-             * Unntak vil normalt ikke plutselig oppst� under kj�ring, og det er
-             * derfor kanskje ikke n�dvendig � h�ndtere dem her. Eller...?
-             *
+             * Unntak vil normalt ikke plutselig oppstå under kjøring, og det er
+             * derfor kanskje ikke nødvendig å håndtere dem her. Eller...?
+             
              * Hvis det skjer en feil, f.eks. at SHA-2 ikke er implementert
-             * i aktuell JVM, vil resultatet av � sluke unntaket bli at vi
+             * i aktuell JVM, vil resultatet av å sluke unntaket bli at vi
              * returnerer en tom streng. Ved senere passord-matching vil alle
              * passord matche de som er generert med denne feilen.
              *
              * Det er jo litt skummelt :(
              *
-             * Hva burde vi gjort? ... Tja ... Noe burde v�rt gjort!
+             * Hva burde vi gjort? ... Tja ... Noe burde vært gjort!
              */
         }
         return kryptert;

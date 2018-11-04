@@ -4,7 +4,7 @@ import Code.Schemas.RegistrerSchema;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "dat108oblig3", name = "attendees")
+@Table(schema = "public", name = "attendees")
 public class Person {
 
 	@Id
