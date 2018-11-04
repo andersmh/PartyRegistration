@@ -17,7 +17,7 @@ public class RegistrerSchema {
 		this.password = request.getParameter("passord");
 		this.repetedPassword = request.getParameter("passordRepetert");
 
-		System.out.println(password + " DETTE ER PASSORD");
+		System.out.println(password + " detter er passord");
 
 		isfirstNameValid();
 		islastNameValid();
