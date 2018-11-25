@@ -29,12 +29,10 @@ public class LoginServlet extends HttpServlet {
 		LoginSchema schema = new LoginSchema("");
 
 		if (p != null && PasswordUtil.sjekkPassord(request.getParameter("passord"), p.getPassword())) {
-
 			request.getSession(true).setAttribute("username", p);
 			request.getSession().removeAttribute("loginmessage");
 			response.sendRedirect("/deltagerliste");
 		} else {
-
 			schema.setErrortext("Ugylig brukernavn og/eller passord!");
 			request.getSession().setAttribute("loginmessage", schema);
 			response.sendRedirect("/login");
