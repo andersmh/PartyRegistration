@@ -5,8 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 
-<link rel="stylesheet"
-	href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" />
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" />
 <script src="${pageContext.request.contextPath}/js/script.js"></script>
 
 <title>Påmelding</title>
@@ -21,8 +20,7 @@
 					color="red" id="badfirstname">${schema.errorFirstName}</font>
 			</div>
 			<div class="pure-control-group">
-				<label for="etternavn">Etternavn:</label> <input type="text"
-					name="etternavn" value="${schema.lastName}"
+				<label for="etternavn">Etternavn:</label> <input type="text" name="etternavn" value="${schema.lastName}"
 					onkeyup="correctLastName()" /> <font color="red" id="badlastname">${schema.errorLastName}</font>
 			</div>
 			<div class="pure-control-group">
